@@ -323,7 +323,7 @@ hr {
     line-height: normal;
 }
 
-.overview-container {
+.overview-container-today {
     margin-top: 24px;
     display: grid;
     grid-template-columns: repeat(4, 255px);
@@ -331,16 +331,18 @@ hr {
     gap: 30px;
 }
 
-.overview-container>div {
+.overview-container-today>div {
     padding: 27px 31px 19px 24px;
     background-color: var(--cardbackground);
     border-radius: 5px;
 }
 
-.overview-container>div:hover {
+.overview-container-today>div:hover {
     background-color: var(--hoverback);
     cursor: pointer;
     transition: all 0.3s;
+
+
 }
 
 
@@ -477,10 +479,9 @@ hr {
 
     .overview-title {
         align-self: flex-start;
-        margin-left: 132px;
     }
 
-    .overview-container {
+    .overview-container-today {
         grid-template-columns: repeat(3, 255px);
         grid-template-rows: repeat(3, 125px);
         justify-content: center;
@@ -553,7 +554,7 @@ hr {
         background-color: var(--cardbackground);
     }
 
-    .overview-container {
+    .overview-container-today {
         width: 326px;
         margin-top: 24px;
         display: grid;
@@ -566,10 +567,5 @@ hr {
     .heading {
         flex-direction: column;
     }
-
-    .overview-title {
-        margin-left: 22px;
-    }
-
 
 }
